@@ -1,0 +1,403 @@
+@import 'parameters';
+@import 'mediaqueries';
+
+.products{
+    @extend %align-center;
+    margin: 2rem auto 2rem auto;
+    flex-direction: row;
+    flex-flow: wrap;
+    width: 90%;
+}
+.product{
+    margin: 0.65rem auto 0.5rem auto;
+    font-family: $rlw;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
+    &.cart{
+        display: flex;
+        width: 100%;
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+    &-header{
+        height: 250px;
+        &.cart{
+            height: 292px;
+        }
+        &.shoes {
+            img{
+                object-position: center !important;
+            }
+        }
+        img{
+            object-fit: cover;
+            object-position: top;
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    &-header#wt3 img{
+        object-position: center !important;
+    }
+    &-content{
+        background: $light;
+        padding: 30px;
+    }
+    &-title{
+        height: 20px;
+        margin: 0 0 2rem 0;
+        text-align: center;
+        @include tablet {
+            margin: 0 0 2rem 0;
+        }
+    }
+    &-excerpt{
+        color: $dark;
+        margin: 10px 0 20px;
+    }
+    &-description{
+        display: flex;
+        flex-direction: column;
+        &-text{
+            display: flex;
+                font-family: $rlw;
+                text-align: center;
+                justify-content: center;
+                list-style: none;
+                span{
+                    font-weight: bold;
+                    &#sp1, &#sp4, &#ev1, &#nk5, &#nk6, &#mshsp9, 
+                    &#mshosp1, &#mshosp7, &#mtrsp8, &#mtrsp9, &#mshoessp9, 
+                    &#wtopsp7, &#wtopsp10, &#wlgsp2, &#whdsp4, &#whdsp5, &#whdsp7 {
+                        color: rgb(182, 182, 182);
+                    }
+                    &#sp2 , &#sp6 , &#sp9, &#sp11, &#ad1, &#ad3, &#ad4, &#pu1, &#pu4, &#ev2, &#nk3, 
+                    &#mshsp1, &#mshsp2, &#mshsp4, &#mshsp5, &#mshsp7, &#mshsp12,
+                    &#mshosp2, &#mshosp3, &#mshosp4, &#mshosp8, &#mtrsp1, &#mtrsp3, &#mtrsp7,
+                    &#mshoessp1, &#mshoessp3, &#mshoessp4, &#mshoessp6, &#mshoessp8, &#mshoessp11,
+                    &#wtopsp4, &#wlgsp1, &#whdsp1, &#whdsp8, &#wshsp3, &#wshsp6{
+                        color: rgb(0, 0, 0);
+                    }
+                    &#sp3, &#sp8, &#ev5, &#mshsp8, &#mtrsp2, &#mtrsp10, &#wtopsp8{
+                        color: rgb(255, 0, 0);
+                    }
+                    &#sp5, &#sp12, &#wtsp4, &#ad2, &#ad7, &#pu2, &#pu6, &#ev4, &#nk1, &#mshsp3, &#mshsp6,
+                    &#mshoessp2, &#mshoessp5, &#mshoessp10, &#mshoessp12, &#wtopsp2, &#wtopsp6, &#wlgsp4,
+                    &#wshsp2, &#wshsp4, &#wshsp8 {
+                        color: rgb(231, 231, 231);
+                    }
+                    &#sp7, &#sp10, &#wtsp5, &#ad5, &#wtopsp1, &#wtopsp12, &#wlgsp3,
+                    &#whdsp3, &#whdsp6, &#wshsp1, &#wshsp7{
+                        color: rgb(248, 179, 248);
+                    }
+                    &#wtsp1, &#wtsp3{
+                        color: rgb(210, 236, 92);
+                    }
+                    &#wtsp4{
+                        color: rgb(171, 52, 187);
+                    }
+                    &#ev3, &#mshosp5, &#wtopsp5{
+                        color: rgb(255, 208, 0);
+                    }
+                    &#pu3, &#ev6, &#mshsp11, &#wlgsp6, &#wlgsp7{
+                        color: rgb(84, 160, 247);
+                    }
+                    &#nk2, &#mtrsp5, &#whdsp2{
+                        color: rgb(7, 248, 115);
+                    }
+                    &#mshsp10, &#wtopsp3, &#wshsp5{
+                        color: rgb(21, 116, 122);
+                    }
+                    &#nk4, &#wtopsp9{
+                        color: rgb(114, 69, 199);
+                    }
+                    &#mshosp6, &#mtrsp4, &#mtrsp6, &#mshoessp7, &#wlgsp8{
+                        color: rgb(38, 63, 201);
+                    }
+                    &#wtopsp11{
+                        color: rgb(236, 183, 139);
+                    }
+                }
+                li{
+                    flex-basis: 50%;
+                }
+                &.cart{
+                    flex-direction: column;
+                    margin: 1rem auto;
+                }
+        }
+        &-price{
+            font-size: 1.2em;
+            color: $lime;
+            font-weight: bold;
+            text-align: center;
+        }
+        &-add{
+            text-decoration: none;
+            background-color: $lime;
+            font-family: $rlw;
+            color: $light;
+            padding: 5px;
+            width: 100%;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.2em;
+            margin: 1rem 0 0 0;
+            transition: all 0.3s ease-in-out;
+            i{
+                margin: 0 0 0 0.5rem;
+            }
+            &:hover{
+                background-color: $orangeRed;
+            }
+            &.cart-remove{
+                background-color: $orangeRed;
+                &:hover{
+                    background-color: $lime;
+                }
+            }
+            &.clicked{
+                background-color: #EBEBE4;
+                cursor: default;
+                pointer-events: none;
+                content: "Already added!";
+            }
+        }
+        &-quantity{
+            border: none;
+            border-bottom: 1px solid $dark;
+            font-size: 1.1rem;
+            text-align: center;
+            font-weight: 400;
+            font-family: 'Raleway';
+            max-width: 15%;
+            transition: all 0.2s ease-in-out;
+            &:focus{
+                outline: none;
+            }
+            &:hover, &:active{
+                color: $lime;
+                border-bottom: 1px solid $lime;
+            }
+        }
+        &-select{
+            border: none;
+            border-bottom: 1px solid $dark;
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: 'Raleway';
+            transition: all 0.2s ease-in-out;
+            &:focus{
+                outline: none;
+            }
+            &:hover, &:active{
+                color: $lime;
+                border-bottom: 1px solid $lime;
+            }
+        }
+    }
+}
+.animated-bg{
+    background-image: linear-gradient(
+        to right,
+        #f6f7f8 0%,
+        #edeef1 10%,
+        #f6f7f8 20%,
+        #f6f7f8 100%
+    );
+    background-size: 200% 100%;
+    animation: bgPos 1s linear infinite;
+    &-text{
+        border-radius: 50px;
+        display: inline-block;
+        margin: 0;
+        height: 10px;
+        width: 100%;
+    }
+}
+@keyframes bgPos{
+    0%{
+        background-position: 50% 0;
+    }
+    100%{
+        background-position: -150% 0;
+    }
+}
+.products-show{
+    @extend %align-center;
+    margin: 2rem auto 2rem auto;
+    width: 90%;
+    @include pc {
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+    @include tablet {
+        flex-direction: column-reverse;
+    }
+}
+.product-big{
+    flex-basis: 25%;
+    font-family: $rlw;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    @include pc {
+        width: 350px;
+    }
+    @include tablet {
+        width: 100%;
+        margin: 2rem;
+    }
+    &-header{
+        height: 500px;
+        img{
+            object-fit: cover;
+            object-position: top;
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+.products-slideshow{
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+    &_row1, &_row2{
+        display: flex;
+        @include pc {
+            flex-direction: row;
+        }
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+    &.row{
+        display: none;
+    }
+    &_buttons{
+        margin: auto;
+        padding: 1rem;
+        background-color: $lime;
+        border-radius: 10px;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background-color: $orangeRed;
+        }
+    }
+    &_prevbutton, &_nextbutton {
+        cursor: pointer;
+        color: $light;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    &_prevbutton:hover, &_nextbutton:hover{
+        color: $dark;
+    }
+}
+.products_container{
+    @extend %align-center;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 75%;
+    @include tablet {
+        width: 98%;
+        padding: 1rem;
+    }
+    @include mobile {
+        width: 75%;
+    }
+    max-height: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    &_first-row, &_second-row, &_third-row{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+    &_first-row{
+        >.product{
+            flex-basis: 23%;
+            &.cart{
+                flex-basis: 100%;
+                max-width: 570px;
+            }
+            @include tablet {
+                flex-basis: 75%;
+            }
+            @include mq1240{
+                flex-basis: 100%;
+            }
+        }
+    }
+    &_second-row{
+        >.product{
+            flex-basis: 23%;
+            @include tablet {
+                flex-basis: 48%;
+            }
+            @include mq1240{
+                flex-basis: 48%;
+            }
+        }
+    }
+    &_third-row{
+        >.product{
+            flex-basis: 23%;
+            @include tablet {
+                flex-basis: 48%;
+            }
+            @include mq1240{
+                flex-basis: 48%;
+            }
+        }
+        >.product.two{
+            flex-basis: 45%;
+        }
+    }
+    &-total{
+        font-size: 1.2rem;
+        margin: 1rem;
+        font-weight: bold;
+        text-align: center;
+        span{
+            color: $lime;
+        }
+    }
+    &-payment{
+        @extend %align-center;
+        justify-content: center;
+        &-button{
+            margin: 1rem;
+            padding: 12px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            background: $lime;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: $light;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background: $orangeRed;
+            }
+        }
+    }
+}
+.products_display{
+    text-align: center;
+}

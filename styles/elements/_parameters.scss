@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:wght@200;300;400;700;900&display=swap');
+$dark: #222121;
+$orangeRed: #ff683a;
+$lime: #00cc66;
+$light: #ffffff;
+$rlw: 'Raleway',
+sans-serif;
+$pmnt: 'Permanent Marker',
+sans-serif;
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+@-webkit-keyframes flash {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+@keyframes flash {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+.flash {
+    -webkit-animation-name: flash;
+    animation-name: flash;
+}
+.motion {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}

@@ -1,0 +1,660 @@
+@import 'parameters';
+@import 'mediaqueries';
+
+.hero {
+    background-image: url('../img/heroimg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    filter: grayscale(0.8);
+    transition: all 0.3s ease;
+    @include tablet {
+        background-attachment: scroll;
+        height: 100%;
+        filter: grayscale(0.2);
+    }
+    &:hover {
+        filter: grayscale(0);
+    }
+    &_title {
+        @include tablet {
+            font-size: 3.5rem;
+        }
+        @include mobile {
+            font-size: 2rem;
+        }
+        font-size: 6rem;
+        font-family: $rlw;
+        color: $light;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        span {
+            font-weight: 800;
+        }
+    }
+    &_btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: $light;
+        outline: none;
+        padding: 15px;
+        background: none;
+        cursor: pointer;
+        border: 3px solid $light;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background: $light;
+            a {
+                color: $dark;
+            }
+        }
+        a {
+            color: $light;
+            text-decoration: none;
+            font-size: 1.5em;
+            @include mobile {
+                font-size: 1rem;
+            }
+            text-transform: uppercase;
+        }
+    }
+    &_slider {
+        a {
+            text-decoration: none;
+        }
+        i {
+            color: $light;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2.5%;
+            width: 30px;
+            font-size: 3em;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: translateY(7px);
+            }
+        }
+    }
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+    &_left {
+        height: 100%;
+        width: 35%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform .5s ease-in-out;
+        img {
+            width: 100px;
+            margin: 1rem 0 1rem 0;
+        }
+        >div {
+            height: 100%;
+            width: 100%;
+            @extend %align-center;
+            flex-direction: column;
+            justify-content: center;
+            color: $light;
+        }
+        >div:first-child {
+            background-color: $light;
+            .slider_button {
+                background-color: $dark;
+                a {
+                    color: $light;
+                }
+            }
+            p {
+                color: $dark;
+            }
+        }
+        >div:nth-child(2) {
+            background-color: $dark;
+            .slider_button {
+                background-color: $light;
+                a {
+                    color: $dark;
+                }
+            }
+            p {
+                color: $light;
+            }
+        }
+        >div:nth-child(3) {
+            background-color: $light;
+            .slider_button {
+                background-color: $dark;
+                a {
+                    color: $light;
+                }
+            }
+            p {
+                color: $dark;
+            }
+        }
+        >div:nth-child(4) {
+            background-color: $dark;
+            .slider_button {
+                background-color: $light;
+                a {
+                    color: $dark;
+                }
+            }
+            p {
+                color: $light;
+            }
+        }
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            margin-top: -30px;
+        }
+        p {
+            font-family: $rlw;
+            font-weight: 100;
+            font-size: 1.2em;
+            margin: 0 0 1rem 0;
+            @include tablet {
+                text-align: center;
+                font-size: 1em;
+            }
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+    &_button {
+        font-size: 1rem;
+        font-family: $rlw;
+        padding: 14px 32px;
+        @include tablet {
+            padding: 7px 16px;
+        }
+        border: none;
+        border-radius: 4px;
+        margin-top: 2rem;
+        cursor: pointer;
+        position: relative;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+        &:hover::after {
+            width: 100%;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: $lime;
+            transition: all 0.3s ease-in-out;
+            border-radius: 4px;
+        }
+        a {
+            position: relative;
+            z-index: 2;
+            color: $dark;
+            text-decoration: none;
+        }
+    }
+    &_right {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 35%;
+        width: 65%;
+        transition: transform .5s ease-in-out;
+        >div {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 100%;
+            width: 100%;
+        }
+        >div:first-child {
+            background-image: url('../img/slide1.png');
+            filter: grayscale(0.4);
+        }
+        >div:nth-child(2) {
+            background-image: url('../img/slide2.png');
+            filter: grayscale(0.4);
+        }
+        >div:nth-child(3) {
+            background-image: url('../img/slide3.png');
+            filter: grayscale(0.4);
+        }
+        >div:nth-child(4) {
+            background-image: url('../img/slide4.png');
+            background-size: cover;
+            filter: grayscale(0.4);
+        }
+    }
+    &_action-buttons {
+        button {
+            position: absolute;
+            left: 35%;
+            top: 50%;
+            z-index: 100;
+            background-color: $light;
+            border: none;
+            color: $dark;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 15px;
+            @include tablet {
+                left: 50%;
+                top: 90%;
+                padding: 5px 25px;
+                background-color: transparent;
+                backdrop-filter: blur(5px);
+                color: $light;
+            }
+            &:hover {
+                color: $lime;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .down-button {
+            transform: translateX(-100%);
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .up-button {
+            transform: translateY(-100%);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            @include tablet {
+                transform: none;
+            }
+        }
+    }
+}
+
+.trends {
+    display: grid;
+    justify-content: center;
+    &_title {
+        font-size: 4rem;
+        font-family: $pmnt;
+        font-weight: lighter;
+        display: block;
+        margin: 0 auto;
+        text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+        background: url(../img/animated-text-fill.png) repeat-y;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: aitf 80s linear infinite;
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        @-webkit-keyframes aitf {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+        @include tablet {
+            font-size: 3rem;
+            text-align: center;
+        }
+        @include mobile {
+            font-size: 2.2rem;
+            margin: 1rem 0rem 1rem 0;
+        }
+    }
+    &_paragraph {
+        font-weight: bold;
+        margin: 1rem 0rem 1rem 0;
+        span {
+            color: $lime;
+        }
+        @include tablet {
+            text-align: center;
+            margin: 1rem 0rem 1rem 0;
+        }
+    }
+}
+
+.info {
+    @extend %align-center;
+    justify-content: space-between;
+    >div {
+        flex-basis: calc((100% / 3));
+        display: grid;
+        justify-content: center;
+        margin: 4rem 0 4rem 0;
+        i {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50px;
+            font-size: 3rem;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p {
+            font-family: $rlw;
+            font-weight: 400;
+            margin: 1rem 0 1rem 0;
+            text-align: center;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+    @include tablet {
+        display: grid;
+    }
+    @include mobile {
+        display: grid;
+    }
+}
+
+.clothes {
+    @extend %align-center;
+    @include tablet {
+        flex-direction: column;
+    }
+    justify-content: space-between;
+    >div {
+        flex-basis: calc((100% / 2));
+        justify-content: center;
+        margin: 4rem 0 4rem 0;
+        h3 {
+            text-align: center;
+            font-family: $pmnt;
+            font-size: 2em;
+            font-weight: lighter;
+            color: $dark;
+            span {
+                color: $lime;
+                font-weight: bold;
+            }
+        }
+    }
+    &_left-container {
+        .clothes_split {
+            &.split1 {
+                background-size: auto;
+                background-position-y: 65%;
+                background-image: url('../img/split1.jpg');
+                @include tablet {
+                    background-size: cover;
+                }
+            }
+            &mid {
+                display: flex;
+                justify-content: center;
+                width: 98%;
+                @include tablet {
+                    flex-direction: column;
+                }
+            }
+            &.split2 {
+                flex-basis: 50%;
+                background-size: cover;
+                background-position-y: 80%;
+                background-image: url('../img/split2.jpg');
+                @include tablet {
+                    flex-direction: column;
+                    flex-basis: unset;
+                }
+            }
+            &.split3 {
+                flex-basis: 50%;
+                background-size: cover;
+                background-position-y: 80%;
+                background-image: url('../img/split3.jpg');
+                @include tablet {
+                    flex-direction: column;
+                    flex-basis: unset;
+                }
+            }
+            &.split4 {
+                background-size: cover;
+                background-position-y: 80%;
+                background-image: url('../img/split4.jpg');
+            }
+        }
+    }
+    &_right-container {
+        .clothes_split {
+            &.split1 {
+                background-size: auto;
+                background-position-y: 20%;
+                background-image: url('../img/split11.jpg');
+                @include tablet {
+                    background-size: cover;
+                }
+            }
+            &mid {
+                display: flex;
+                justify-content: center;
+                width: 98%;
+                @include tablet {
+                    flex-direction: column;
+                }
+            }
+            &.split2 {
+                flex-basis: 50%;
+                background-size: cover;
+                background-position-y: 5%;
+                background-image: url('../img/split22.jpg');
+                @include tablet {
+                    flex-direction: column;
+                    flex-basis: unset;
+                }
+            }
+            &.split3 {
+                flex-basis: 50%;
+                background-size: cover;
+                background-position-y: 25%;
+                background-image: url('../img/split33.jpg');
+                @include tablet {
+                    flex-direction: column;
+                    flex-basis: unset;
+                }
+            }
+            &.split4 {
+                background-size: cover;
+                background-position-y: 50%;
+                background-image: url('../img/split44.jpg');
+            }
+        }
+    }
+    &_split {
+        margin: 1rem;
+        width: 95%;
+        @include tablet {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        height: 25vh;
+        box-shadow: 0px 0px 3px 1px #22212133;
+        padding: 25px;
+        display: grid;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            #see {
+                transform: scale(1.01);
+            }
+        }
+        #title {
+            font-family: $rlw;
+            font-weight: bolder;
+            font-size: 1.2em;
+            color: $dark;
+            @include tablet {
+                text-align: center;
+                background-color: #22212133;
+                backdrop-filter: blur(2.5px);
+                color: $light;
+                font-size: 0.9em;
+                display: block;
+                margin-top: auto;
+                padding: 5px;
+            }
+        }
+        #see {
+            font-family: $rlw;
+            text-decoration: none;
+            background-color: #22212133;
+            backdrop-filter: blur(2.5px);
+            color: $light;
+            text-align: end;
+            display: block;
+            margin-top: auto;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            font-size: 1.1em;
+            padding: 5px;
+            &:hover {
+                color: $lime;
+            }
+            @include tablet {
+                text-align: center;
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+
+.brands {
+    &_title {
+        text-align: center;
+        font-size: 2rem;
+        @include tablet {
+            font-size: 1.8rem;
+        }
+        font-family: $pmnt;
+        font-weight: lighter;
+        display: block;
+        margin: 0 auto;
+        text-shadow: 0 0 80px rgba(255,
+        255,
+        255,
+        .5);
+        background: url(../img/animated-text-fill.png) repeat-y;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: aitf 80s linear infinite;
+        -webkit-transform: translate3d(0,
+        0,
+        0);
+        -webkit-backface-visibility: hidden;
+    }
+    &_show {
+        width: 100%;
+        margin: 2rem 0 2rem 0;
+        height: 9vh;
+        @include tablet {
+            height: 15vh
+        }
+        @extend %align-center;
+        justify-content: space-evenly;
+        background: $dark;
+        .log{
+            display: none;
+        }
+    }
+}
+
+.newsletter {
+    @extend %align-center;
+    @include tablet {
+        flex-direction: column;
+    }
+    margin: 4rem 0 2rem 0;
+    &_title {
+        @extend %align-center;
+        flex-basis: calc((100% / 2));
+        text-align: center;
+        padding: 25px;
+        height: 10vh;
+        background-color: $dark;
+        font-family: $rlw;
+        font-size: 1.4em;
+        color: $lime;
+        span {
+            color: $light;
+        }
+        @include tablet {
+            width: 100%;
+            font-size: 1.2em
+        }
+    }
+    &_input {
+        @extend %align-center;
+        padding: 25px;
+        flex-basis: calc((100% / 4));
+        background-color: $lime;
+        height: 10vh;
+        input {
+            border: 0;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: $light;
+            background-color: transparent;
+            font-size: 1.2em;
+            width: 100%;
+            @include tablet {
+                font-size: 1.1em;
+                text-align: center;
+            }
+        }
+        @include tablet {
+            width: 100%;
+        }
+    }
+    &_button {
+        @extend %align-center;
+        background-color: $dark;
+        flex-basis: calc((100% / 4));
+        padding: 15px;
+        height: 10vh;
+        button {
+            font-size: 1em;
+            padding: 12px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            background: #00cc66;
+            margin-left: 16px;
+            color: #ffffff;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                background-color: $orangeRed;
+            }
+            @include tablet {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @include tablet {
+            width: 100%;
+        }
+    }
+}

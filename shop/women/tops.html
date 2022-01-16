@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link rel="stylesheet" href="/styles/styles.css">
+        <title>SportsWear | Women Tops</title>
+        <script src="../../js/women/tops.js" async></script>
+        <script src="../../js/nav.js" async></script>
+        <script src="../../js/sidebar.js" async></script>
+        <script src="../../js/addtocart.js" async></script>
+    </head>
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <nav class="nav">
+            <a href="/" class="nav_logo">Sports <span>Wear</span></a>
+            <div class="nav_bars closed" id="bars">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav_menu closed" id="menu">
+                <a href="/" class="nav_menu-links">Home</a>
+                <a href="/shop.html" class="nav_menu-links">Shop</a>
+                <a href="/shop/mycart.html" class="nav_menu-links" id="cartProducts">0<i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </div>
+    <!--Sidebar Search-->
+    <section id="sidebar">
+        <div id="mySidenav" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
+            <p>Trends</p>
+            <ul>
+                <li> <a href="../adidas/collection2022.html">Adidas</a></li>
+                <li><a href="../nike/collection2022.html">Nike</a></li>
+                <li><a href="../everlast/collection2022.html">Everlast</a></li>
+                <li><a href="../puma/collection2022.html">Puma</a></li>
+            </ul>
+            <p>Women</p>
+            <ul>
+                <li> <a href="#">Tops</a></li>
+                <li><a href="../women/leggings.html">Leggings</a></li>
+                <li><a href="../women/hoodies.html">Hoodies</a></li>
+                <li><a href="../women/shoes.html">Shoes</a></li>
+            </ul>
+            <p>Men</p>
+            <ul>
+                <li><a href="../men/shirts.html">Shirts</a></li>
+                <li><a href="../men/shorts.html">Shorts</a></li>
+                <li><a href="../men/tracksuits.html">Tracksuits</a></li>
+                <li><a href="../men/shoes.html">Shoes</a></li>
+            </ul>
+        </div>
+        <div class="sidebar_open" id="openbtn" onclick="openNav()">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </section>
+    <main>
+    <!--Banner-->
+    <section id="clothes_banner">
+        <div class="clothes_banner">
+            <div class="clothes_banner-img">
+                <img id="topsbanner" src="../../img/adidastopsbanner.jpg" alt="">
+            </div>
+            <div class="clothes_banner-title">
+                <h1 ><span>Women</span> Tops</h1>
+            </div>
+        </div>
+    </section>
+    <!--Catalogue-->
+    <section id="products">
+            <p class="products_display" id="products_display"></p>
+            <div class="products_container">
+                <div class="products_container_first-row">
+                    <div class="product" data-prodid="108">
+                        <div class="product-header animated-bg" id="ph1">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Adidas Training Top
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="wtopsp1">pink</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price1">
+                                    $22.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" data-prodid="109">
+                        <div class="product-header animated-bg" id="ph2">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Nike Logo Shirt
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="wtopsp2">white</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price2">
+                                    $23.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" data-prodid="110">
+                        <div class="product-header animated-bg" id="ph3">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Puma Logo Shirt
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="wtopsp3">green</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price3">
+                                    $21.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" data-prodid="111">
+                        <div class="product-header animated-bg" id="ph4">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Nike Training Top
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="wtopsp4">black</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price4">
+                                    $24.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_container_second-row">
+                    <div class="product" data-prodid="112">
+                        <div class="product-header animated-bg" id="ph5">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Adidas Logo Shirt
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="wtopsp5">orange</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                        <option value="XXL">XXL</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price5">
+                                    $25.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" data-prodid="113">
+                        <div class="product-header animated-bg" id="ph6">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Reebok Logo Shirt
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="wtopsp6">white</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price6">
+                                    $19.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" data-prodid="114">
+                        <div class="product-header animated-bg" id="ph7">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Puma Training Top
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="wtopsp7">gray</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price7">
+                                    $18.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" data-prodid="115">
+                        <div class="product-header animated-bg" id="ph8">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                New Balance Training Top
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="wtopsp8">red</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price8">
+                                    $20.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_container_third-row">
+                    <div class="product" data-prodid="116">
+                        <div class="product-header animated-bg" id="ph9">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Umbro Classic Tee
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="wtopsp9">purple</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price9">
+                                    $22.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" data-prodid="117">
+                        <div class="product-header animated-bg" id="ph10">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Everlast Logo Sleeveless Shirt
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="wtopsp10">gray</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price10">
+                                    $19.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" data-prodid="118">
+                        <div class="product-header animated-bg" id="ph11">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Reebok Training Top
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="wtopsp11">coral</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price11">
+                                    $23.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" data-prodid="119">
+                        <div class="product-header animated-bg" id="ph12">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Nike Training Sleeveless Shirt
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="wtopsp12">pink</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price12">
+                                    $21.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section> 
+    </main>
+</body>
+<footer>
+    <nav class="foot nav">
+        <a href="/" class="foot nav_logo">Sports <span>Wear</span></a>
+        <div class="foot nav_menu">
+            <a href="/" class="nav_menu-links"><i class="fab fa-facebook-f"></i></a>
+            <a href="/" class="nav_menu-links"><i class="fab fa-twitter"></i></a>
+            <a href="/" class="nav_menu-links"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="foot nav_advice">
+            <p>Download our app!</p>
+            <div class="foot nav_advice-links">
+                <a href="/">iOS</a>
+                <a href="/">Android</a>
+            </div>
+
+        </div>
+    </nav>
+</footer>
+</html>

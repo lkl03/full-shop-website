@@ -1,0 +1,30 @@
+@import 'parameters';
+@import 'mediaqueries';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    max-width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    max-width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    max-width: fill-available;
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    &-track{
+        background-color: #e4e4e4;
+        border-radius: 100px;
+    }
+    &-thumb{
+        border-radius: 100px;
+        border: 2px solid transparent;
+        background-clip: content-box;
+        background-color: $dark;
+        &:hover, &:active{
+            background-color: $lime;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@mixin mq1240 {
+    @media screen and (max-width: 1240px) {
+        @content;
+    }
+}
+@mixin pc {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}

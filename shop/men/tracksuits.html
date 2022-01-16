@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link rel="stylesheet" href="/styles/styles.css">
+        <title>SportsWear | Men Tracksuits</title>
+        <script src="../../js/men/tracksuits.js" async></script>
+        <script src="../../js/nav.js" async></script>
+        <script src="../../js/sidebar.js" async></script>
+        <script src="../../js/addtocart.js" async></script>
+    </head>
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <nav class="nav">
+            <a href="/" class="nav_logo">Sports <span>Wear</span></a>
+            <div class="nav_bars closed" id="bars">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav_menu closed" id="menu">
+                <a href="/" class="nav_menu-links">Home</a>
+                <a href="/shop.html" class="nav_menu-links">Shop</a>
+                <a href="/shop/mycart.html" class="nav_menu-links" id="cartProducts">0<i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </div>
+    <!--Sidebar Search-->
+    <section id="sidebar">
+        <div id="mySidenav" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
+            <p>Trends</p>
+            <ul>
+                <li> <a href="../adidas/collection2022.html">Adidas</a></li>
+                <li><a href="../nike/collection2022.html">Nike</a></li>
+                <li><a href="../everlast/collection2022.html">Everlast</a></li>
+                <li><a href="../puma/collection2022.html">Puma</a></li>
+            </ul>
+            <p>Women</p>
+            <ul>
+                <li> <a href="../women/tops.html">Tops</a></li>
+                <li><a href="../women/leggings.html">Leggings</a></li>
+                <li><a href="../women/hoodies.html">Hoodies</a></li>
+                <li><a href="../women/shoes.html">Shoes</a></li>
+            </ul>
+            <p>Men</p>
+            <ul>
+                <li><a href="../men/shirts.html">Shirts</a></li>
+                <li><a href="../men/shorts.html">Shorts</a></li>
+                <li><a href="#">Tracksuits</a></li>
+                <li><a href="../men/shoes.html">Shoes</a></li>
+            </ul>
+        </div>
+        <div class="sidebar_open" id="openbtn" onclick="openNav()">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </section>
+    <main>
+    <!--Banner-->
+    <section id="clothes_banner">
+        <div class="clothes_banner">
+            <div class="clothes_banner-img">
+                <img src="../../img/adidastracksuitsbanner.jpg" alt="">
+            </div>
+            <div class="clothes_banner-title">
+                <h1 ><span>Men</span> Tracksuits</h1>
+            </div>
+        </div>
+    </section>
+    <!--Catalogue-->
+    <section id="products">
+            <p class="products_display" id="products_display"></p>
+            <div class="products_container">
+                <div class="products_container_first-row">
+                    <div class="product" data-prodid="74">
+                        <div class="product-header animated-bg" id="ph1">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Reebok Tracksuit
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="mtrsp1">black</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price1">
+                                    $27.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" data-prodid="75">
+                        <div class="product-header animated-bg" id="ph2">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Adidas Tracksuit
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="mtrsp2">red</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price2">
+                                    $23.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" data-prodid="76">
+                        <div class="product-header animated-bg" id="ph3">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Adidas Retro Tracksuit
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="mtrsp3">black</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price3">
+                                    $33.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" data-prodid="77">
+                        <div class="product-header animated-bg" id="ph4">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Puma American Tracksuit
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="mtrsp4">blue</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                        <option value="XXL">XXL</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price4">
+                                    $29.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_container_second-row">
+                    <div class="product" data-prodid="78">
+                        <div class="product-header animated-bg" id="ph5">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Nike 90's Tracksuit
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="mtrsp5">lime</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price5">
+                                    $39.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" data-prodid="79">
+                        <div class="product-header animated-bg" id="ph6">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Champion Logo Tracksuit
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="mtrsp6">blue</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price6">
+                                    $28.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" data-prodid="80">
+                        <div class="product-header animated-bg" id="ph7">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Nike Retro Tracksuit
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="mtrsp7">black</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                        <option value="XXL">XXL</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price7">
+                                    $35.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product" data-prodid="81">
+                        <div class="product-header animated-bg" id="ph8">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                New Balance Tracksuit
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="mtrsp8">gray</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price8">
+                                    $25.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_container_third-row">
+                    <div class="product two" data-prodid="82">
+                        <div class="product-header animated-bg" id="ph9">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Under Armour Tracksuit
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="mtrsp9">gray</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price9">
+                                    $23.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product two" data-prodid="83">
+                        <div class="product-header animated-bg" id="ph10">&nbsp;</div>
+                        <div class="product-content">
+                            <h3 class="product-title" id="product-title">
+                                Umbro Retro Tracksuit
+                            </h3>
+                            <div class="product-description">
+                                <ul class="product-description-text">
+                                    <li>Color: <span id="mtrsp10">red</span></li>
+                                    <li>Size: <select class="product-description-select">
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select></li>
+                                </ul>
+                                <p class="product-description-price" id="price10">
+                                    $22.99
+                                </p>
+                                <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section> 
+    </main>
+</body>
+<footer>
+    <nav class="foot nav">
+        <a href="/" class="foot nav_logo">Sports <span>Wear</span></a>
+        <div class="foot nav_menu">
+            <a href="/" class="nav_menu-links"><i class="fab fa-facebook-f"></i></a>
+            <a href="/" class="nav_menu-links"><i class="fab fa-twitter"></i></a>
+            <a href="/" class="nav_menu-links"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="foot nav_advice">
+            <p>Download our app!</p>
+            <div class="foot nav_advice-links">
+                <a href="/">iOS</a>
+                <a href="/">Android</a>
+            </div>
+
+        </div>
+    </nav>
+</footer>
+</html>
