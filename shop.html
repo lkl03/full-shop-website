@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link rel="stylesheet" href="/styles/styles.css">
+        <title>SportsWear | Shop</title>
+        <script src="js/shop_page1.js" async></script>
+        <script src="js/nav.js" async></script>
+        <script src="js/sidebar.js" async></script>
+        <script src="js/addtocart.js" async></script>
+    </head>
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <nav class="nav">
+            <a href="/" class="nav_logo">Sports <span>Wear</span></a>
+            <div class="nav_bars closed" id="bars">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav_menu closed" id="menu">
+                <a href="/" class="nav_menu-links">Home</a>
+                <a href="/shop.html" class="nav_menu-links">Shop</a>
+                <a href="/shop/mycart.html" class="nav_menu-links" id="cartProducts">0<i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </div>
+    <!--Banner-->
+    <!--Sidebar Search-->
+    <section id="sidebar">
+        <div id="mySidenav" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
+            <p>Trends</p>
+            <ul>
+                <li> <a href="./shop/adidas/collection2022.html">Adidas</a></li>
+                <li><a href="./shop/nike/collection2022.html">Nike</a></li>
+                <li><a href="./shop/everlast/collection2022.html">Everlast</a></li>
+                <li><a href="./shop/puma/collection2022.html">Puma</a></li>
+            </ul>
+            <p>Women</p>
+            <ul>
+                <li> <a href="./shop/women/tops.html">Tops</a></li>
+                <li><a href="./shop/women/leggings.html">Leggings</a></li>
+                <li><a href="./shop/women/hoodies.html">Hoodies</a></li>
+                <li><a href="./shop/women/shoes.html">Shoes</a></li>
+            </ul>
+            <p>Men</p>
+            <ul>
+                <li><a href="./shop/men/shirts.html">Shirts</a></li>
+                <li><a href="./shop/men/shorts.html">Shorts</a></li>
+                <li><a href="./shop/men/tracksuits.html">Tracksuits</a></li>
+                <li><a href="./shop/men/shoes.html">Shoes</a></li>
+            </ul>
+        </div>
+        <div class="sidebar_open" id="openbtn" onclick="openNav()">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </section>
+    <main>
+        <section id="banner">
+            <div class="banner flash motion">
+                <div class="banner_text">
+                    <a href="/shop/everlast/collection2022.html"><p>Discover the new collection</p></a>
+                </div>
+                <div class="banner_img">
+                    <a href="/shop/everlast/collection2022.html"><img src="./img/everlastlogow.png" alt=""></a>  
+                </div>
+            </div>
+            <div class="banner flash motion">
+                <div class="banner_text">
+                    <a href="/shop/everlast/collection2022.html"><p>OUT NOW</p></a>
+                </div>
+                <div class="banner_img">
+                    <a href="/shop/adidas/collection2022.html"><img src="./img/adidaslogo.png" alt=""></a>
+                </div>
+            </div>
+        </section> 
+    
+        <!--Products-->
+        <section id="products">
+            <div class="products">
+                <div class="product" data-prodid="1">
+                    <div class="product-header animated-bg" id="ph1">&nbsp;</div>
+                    <div class="product-content">
+                        <h3 class="product-title" id="product-title">
+                            Adidas Hoodie
+                        </h3>
+                        <div class="product-description">
+                            <ul class="product-description-text">
+                                <li>Color: <span id="sp1">gray</span></li>
+                                <li>Size: <select class="product-description-select">
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                    <option value="XXXL">XXXL</option>
+                                </select></li>
+                            </ul>
+                            <p class="product-description-price" id="price1">
+                                $39.99
+                            </p>
+                            <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product" data-prodid="2"> 
+                    <div class="product-header animated-bg" id="ph2">&nbsp;</div>
+                    <div class="product-content">
+                        <h3 class="product-title" id="product-title">
+                            Nike Women Shirt
+                        </h3>
+                        <div class="product-description">
+                            <ul class="product-description-text">
+                                <li>Color: <span id="sp2">black</span></li>
+                                <li>Size: <select class="product-description-select">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                </select></li>
+                            </ul>
+                            <p class="product-description-price" id="price2">
+                                $19.99
+                            </p>
+                            <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product" data-prodid="3">
+                    <div class="product-header animated-bg" id="ph3">&nbsp;</div>
+                    <div class="product-content">
+                        <h3 class="product-title" id="product-title">
+                            Puma Switzerland Jacket
+                        </h3>
+                        <div class="product-description">
+                            <ul class="product-description-text">
+                                <li>Color: <span id="sp3">red</span></li>
+                                <li>Size: <select class="product-description-select">
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select></li>
+                            </ul>
+                            <p class="product-description-price" id="price3">
+                                $69.99
+                            </p>
+                            <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product" data-prodid="4">
+                    <div class="product-header animated-bg" id="ph4">&nbsp;</div>
+                    <div class="product-content">
+                        <h3 class="product-title" id="product-title">
+                            New Balance Tracksuit
+                        </h3>
+                        <div class="product-description">
+                            <ul class="product-description-text">
+                                <li>Color: <span id="sp4">gray</span></li>
+                                <li>Size: <select class="product-description-select">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select></li>
+                            </ul>
+                            <p class="product-description-price" id="price4">
+                                $49.99
+                            </p>
+                            <a href="#" class="product-description-add">Add to my cart<i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pageselector">
+            <div class="pageselector">
+                <ul>
+                    <li><a href="shop.html" class="active">1</a></li>
+                    <li><a href="shop/page2.html">2</a></li>
+                    <li><a href="shop/page3.html">3</a></li>
+                </ul>
+                <p>Showing page 1 of 3</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+<footer>
+    <nav class="foot nav">
+        <a href="/" class="foot nav_logo">Sports <span>Wear</span></a>
+        <div class="foot nav_menu">
+            <a href="/" class="nav_menu-links"><i class="fab fa-facebook-f"></i></a>
+            <a href="/" class="nav_menu-links"><i class="fab fa-twitter"></i></a>
+            <a href="/" class="nav_menu-links"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="foot nav_advice">
+            <p>Download our app!</p>
+            <div class="foot nav_advice-links">
+                <a href="/">iOS</a>
+                <a href="/">Android</a>
+            </div>
+
+        </div>
+    </nav>
+</footer>
+</html>
